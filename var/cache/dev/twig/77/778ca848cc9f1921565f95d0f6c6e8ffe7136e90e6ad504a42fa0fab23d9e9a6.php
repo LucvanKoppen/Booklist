@@ -159,7 +159,7 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
 
     <a href=\"";
         // line 44
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("books_index");
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("review_new", ["Book_id" => twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 44, $this->source); })()), "id", [], "any", false, false, false, 44)]), "html", null, true);
         echo "\">back to list</a>
 
     <a href=\"";
@@ -240,7 +240,7 @@ class __TwigTemplate_a7b1a1fab6b08946d8beff63ae38694580690b24563ec8c19d48bd56af5
     {% endfor %}
     </p>
 
-    <a href=\"{{ path('books_index') }}\">back to list</a>
+    <a href=\"{{ path('review_new', {'Book_id': book.id}) }}\">back to list</a>
 
     <a href=\"{{ path('books_edit', {'id': book.id}) }}\">edit</a>
 

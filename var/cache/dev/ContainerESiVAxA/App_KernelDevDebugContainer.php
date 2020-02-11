@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerMwP7oiO;
+namespace ContainerESiVAxA;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -1033,9 +1033,6 @@ class App_KernelDevDebugContainer extends Container
         $instance->addListener('kernel.request', [0 => function () {
             return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
         }, 1 => 'configure'], 2048);
-        $instance->addListener('console.command', [0 => function () {
-            return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
-        }, 1 => 'configure'], 2048);
         $instance->addListener('kernel.request', [0 => function () {
             return ($this->privates['router_listener'] ?? $this->getRouterListenerService());
         }, 1 => 'onKernelRequest'], 32);
@@ -1714,6 +1711,54 @@ class App_KernelDevDebugContainer extends Container
     }
 
     /**
+     * Gets the private '.service_locator.CoY0dMO' shared service.
+     *
+     * @return \Symfony\Component\DependencyInjection\ServiceLocator
+     */
+    protected function get_ServiceLocator_CoY0dMOService()
+    {
+        return $this->privates['.service_locator.CoY0dMO'] = new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, [
+            'App\\Controller\\BooksController::delete' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\BooksController::edit' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\BooksController::index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
+            'App\\Controller\\BooksController::show' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\HomeController::index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
+            'App\\Controller\\ReviewController::delete' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+            'App\\Controller\\ReviewController::edit' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+            'App\\Controller\\ReviewController::index' => ['privates', '.service_locator.R7NRh99', 'get_ServiceLocator_R7NRh99Service', false],
+            'App\\Controller\\ReviewController::show' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+            'App\\Controller\\BooksController:delete' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\BooksController:edit' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\BooksController:index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
+            'App\\Controller\\BooksController:show' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
+            'App\\Controller\\HomeController:index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
+            'App\\Controller\\ReviewController:delete' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+            'App\\Controller\\ReviewController:edit' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+            'App\\Controller\\ReviewController:index' => ['privates', '.service_locator.R7NRh99', 'get_ServiceLocator_R7NRh99Service', false],
+            'App\\Controller\\ReviewController:show' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
+        ], [
+            'App\\Controller\\BooksController::delete' => '?',
+            'App\\Controller\\BooksController::edit' => '?',
+            'App\\Controller\\BooksController::index' => '?',
+            'App\\Controller\\BooksController::show' => '?',
+            'App\\Controller\\HomeController::index' => '?',
+            'App\\Controller\\ReviewController::delete' => '?',
+            'App\\Controller\\ReviewController::edit' => '?',
+            'App\\Controller\\ReviewController::index' => '?',
+            'App\\Controller\\ReviewController::show' => '?',
+            'App\\Controller\\BooksController:delete' => '?',
+            'App\\Controller\\BooksController:edit' => '?',
+            'App\\Controller\\BooksController:index' => '?',
+            'App\\Controller\\BooksController:show' => '?',
+            'App\\Controller\\HomeController:index' => '?',
+            'App\\Controller\\ReviewController:delete' => '?',
+            'App\\Controller\\ReviewController:edit' => '?',
+            'App\\Controller\\ReviewController:index' => '?',
+            'App\\Controller\\ReviewController:show' => '?',
+        ]);
+    }
+
+    /**
      * Gets the private '.service_locator.R7NRh99' shared service.
      *
      * @return \Symfony\Component\DependencyInjection\ServiceLocator
@@ -1802,50 +1847,6 @@ class App_KernelDevDebugContainer extends Container
             'booksRepository' => ['privates', 'App\\Repository\\BooksRepository', 'getBooksRepositoryService', false],
         ], [
             'booksRepository' => 'App\\Repository\\BooksRepository',
-        ]);
-    }
-
-    /**
-     * Gets the private '.service_locator.zZxzPa9' shared service.
-     *
-     * @return \Symfony\Component\DependencyInjection\ServiceLocator
-     */
-    protected function get_ServiceLocator_ZZxzPa9Service()
-    {
-        return $this->privates['.service_locator.zZxzPa9'] = new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, [
-            'App\\Controller\\BooksController::delete' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\BooksController::edit' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\BooksController::index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
-            'App\\Controller\\BooksController::show' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\ReviewController::delete' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-            'App\\Controller\\ReviewController::edit' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-            'App\\Controller\\ReviewController::index' => ['privates', '.service_locator.R7NRh99', 'get_ServiceLocator_R7NRh99Service', false],
-            'App\\Controller\\ReviewController::show' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-            'App\\Controller\\BooksController:delete' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\BooksController:edit' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\BooksController:index' => ['privates', '.service_locator.zHb0HEt', 'get_ServiceLocator_ZHb0HEtService', false],
-            'App\\Controller\\BooksController:show' => ['privates', '.service_locator.m9EYQvS', 'get_ServiceLocator_M9EYQvSService', false],
-            'App\\Controller\\ReviewController:delete' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-            'App\\Controller\\ReviewController:edit' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-            'App\\Controller\\ReviewController:index' => ['privates', '.service_locator.R7NRh99', 'get_ServiceLocator_R7NRh99Service', false],
-            'App\\Controller\\ReviewController:show' => ['privates', '.service_locator.gBDqBgz', 'get_ServiceLocator_GBDqBgzService', false],
-        ], [
-            'App\\Controller\\BooksController::delete' => '?',
-            'App\\Controller\\BooksController::edit' => '?',
-            'App\\Controller\\BooksController::index' => '?',
-            'App\\Controller\\BooksController::show' => '?',
-            'App\\Controller\\ReviewController::delete' => '?',
-            'App\\Controller\\ReviewController::edit' => '?',
-            'App\\Controller\\ReviewController::index' => '?',
-            'App\\Controller\\ReviewController::show' => '?',
-            'App\\Controller\\BooksController:delete' => '?',
-            'App\\Controller\\BooksController:edit' => '?',
-            'App\\Controller\\BooksController:index' => '?',
-            'App\\Controller\\BooksController:show' => '?',
-            'App\\Controller\\ReviewController:delete' => '?',
-            'App\\Controller\\ReviewController:edit' => '?',
-            'App\\Controller\\ReviewController:index' => '?',
-            'App\\Controller\\ReviewController:show' => '?',
         ]);
     }
 
@@ -2625,7 +2626,7 @@ class App_KernelDevDebugContainer extends Container
         include_once \dirname(__DIR__, 4).'\\vendor\\symfony\\http-kernel\\Controller\\ArgumentResolver\\TraceableValueResolver.php';
         include_once \dirname(__DIR__, 4).'\\vendor\\symfony\\http-kernel\\Controller\\ArgumentResolver\\NotTaggedControllerValueResolver.php';
 
-        return $this->privates['debug.argument_resolver.not_tagged_controller'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver(($this->privates['.service_locator.zZxzPa9'] ?? $this->get_ServiceLocator_ZZxzPa9Service())), ($this->privates['debug.stopwatch'] ?? ($this->privates['debug.stopwatch'] = new \Symfony\Component\Stopwatch\Stopwatch(true))));
+        return $this->privates['debug.argument_resolver.not_tagged_controller'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver(($this->privates['.service_locator.CoY0dMO'] ?? $this->get_ServiceLocator_CoY0dMOService())), ($this->privates['debug.stopwatch'] ?? ($this->privates['debug.stopwatch'] = new \Symfony\Component\Stopwatch\Stopwatch(true))));
     }
 
     /**
@@ -2667,7 +2668,7 @@ class App_KernelDevDebugContainer extends Container
         include_once \dirname(__DIR__, 4).'\\vendor\\symfony\\http-kernel\\Controller\\ArgumentResolver\\TraceableValueResolver.php';
         include_once \dirname(__DIR__, 4).'\\vendor\\symfony\\http-kernel\\Controller\\ArgumentResolver\\ServiceValueResolver.php';
 
-        return $this->privates['debug.argument_resolver.service'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver(($this->privates['.service_locator.zZxzPa9'] ?? $this->get_ServiceLocator_ZZxzPa9Service())), ($this->privates['debug.stopwatch'] ?? ($this->privates['debug.stopwatch'] = new \Symfony\Component\Stopwatch\Stopwatch(true))));
+        return $this->privates['debug.argument_resolver.service'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver(($this->privates['.service_locator.CoY0dMO'] ?? $this->get_ServiceLocator_CoY0dMOService())), ($this->privates['debug.stopwatch'] ?? ($this->privates['debug.stopwatch'] = new \Symfony\Component\Stopwatch\Stopwatch(true))));
     }
 
     /**
