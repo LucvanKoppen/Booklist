@@ -66,7 +66,10 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
     <div class=\"navbar-collapse\" id=\"navbarSupportedContent\">
         <ul class=\"navbar-nav mr-auto\">
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/books\">Booklist</a>
+                <a class=\"nav-link\" href=\"/books\">Books</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/review\">Rewiews</a>
             </li>
         </ul>
     </div>
@@ -74,11 +77,11 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 </nav>
 <div class=\"container\">
 ";
-        // line 24
+        // line 27
         $this->displayBlock('body', $context, $blocks);
-        // line 25
+        // line 28
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 26
+        // line 29
         echo "</div>
 </body>
 </html>
@@ -128,7 +131,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 24
+    // line 27
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -146,7 +149,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     }
 
-    // line 25
+    // line 28
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -171,7 +174,7 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
 
     public function getDebugInfo()
     {
-        return array (  150 => 25,  132 => 24,  114 => 8,  95 => 7,  82 => 26,  80 => 25,  78 => 24,  61 => 9,  59 => 8,  55 => 7,  47 => 1,);
+        return array (  153 => 28,  135 => 27,  117 => 8,  98 => 7,  85 => 29,  83 => 28,  81 => 27,  61 => 9,  59 => 8,  55 => 7,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -192,7 +195,10 @@ class __TwigTemplate_5c11f495b54ded9679f1ef3885ca7712ad5b3088309734f9b20a58aeada
     <div class=\"navbar-collapse\" id=\"navbarSupportedContent\">
         <ul class=\"navbar-nav mr-auto\">
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/books\">Booklist</a>
+                <a class=\"nav-link\" href=\"/books\">Books</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/review\">Rewiews</a>
             </li>
         </ul>
     </div>
