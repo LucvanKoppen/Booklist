@@ -31,7 +31,7 @@ class ReviewController extends AbstractController
     public function new(Request $request): Response
     {
         $review = new Review();
-        $review = $review->setBookId($request->);
+//        $review = $review->setBookId($);
         $form = $this->createForm(ReviewType::class, $review);
         $form->handleRequest($request);
 
