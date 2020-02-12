@@ -99,14 +99,14 @@ class __TwigTemplate_27cdc611233bd1c9b108e71ec7302525c14680c905295ae3c7fcc3260ee
         }
     </style>
     <center>
-    <div class=\"banner\" style=\"width: 100%;height: 350px;padding: 100px; background-color: #9ED3F3;color: white;\">
+    <div style=\"width: 100%;height: 350px;padding: 100px; background-color: #9ED3F3;color: white;\">
 
             <h1>
                 Welcome, to the biggest online library in the history of books
             </h1>
 
     </div>
-    <div class=\"banner\" style=\"width: 100%;height: 350px;padding: 100px; background-color: #FAEED8;\">
+    <div style=\"width: 100%;height: 350px;padding: 100px; background-color: #FAEED8;\">
         <h2>
             No need for an account. Just add your book and get worldwide feedback!
         </h2>
@@ -160,14 +160,14 @@ class __TwigTemplate_27cdc611233bd1c9b108e71ec7302525c14680c905295ae3c7fcc3260ee
         }
     </style>
     <center>
-    <div class=\"banner\" style=\"width: 100%;height: 350px;padding: 100px; background-color: #9ED3F3;color: white;\">
+    <div style=\"width: 100%;height: 350px;padding: 100px; background-color: #9ED3F3;color: white;\">
 
             <h1>
                 Welcome, to the biggest online library in the history of books
             </h1>
 
     </div>
-    <div class=\"banner\" style=\"width: 100%;height: 350px;padding: 100px; background-color: #FAEED8;\">
+    <div style=\"width: 100%;height: 350px;padding: 100px; background-color: #FAEED8;\">
         <h2>
             No need for an account. Just add your book and get worldwide feedback!
         </h2>
